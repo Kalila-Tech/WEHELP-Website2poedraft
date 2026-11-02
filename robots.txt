@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Location of the sitemap
-Sitemap: https://YOUR-SITE-URL/sitemap.xml
+Sitemap: https://kalila-tech.github.io/WEHELP-Website2/sitemap.xml
