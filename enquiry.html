@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Volunteer, Sponsor or Partner - WE HELP</title>
+    <!-- Title tag: unique per page, under 60 characters, keywords first -->
+    <meta name="description" content="Want to volunteer, sponsor or partner with WE HELP? Send an enquiry and find out what happens next.">
+    <!-- Meta description: unique per page, under 155 characters; shown in search results -->
+    <meta name="keywords" content="volunteer mental health, sponsor WE HELP, partnership enquiry, donate, enquiry form">
+    <!-- Target keywords for this page (also used naturally in the headings and text) -->
+    <meta name="author" content="WE HELP">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://YOUR-SITE-URL/enquiry.html">
+    <!-- Canonical URL: the main address of this page -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Enquiry | Volunteer, Sponsor or Partner - WE HELP">
+    <meta property="og:description" content="Want to volunteer, sponsor or partner with WE HELP? Send an enquiry and find out what happens next.">
+    <meta property="og:url" content="https://YOUR-SITE-URL/enquiry.html">
+    <meta property="og:image" content="https://YOUR-SITE-URL/wehelp-pictures/wehelp.jpg">
+    <meta property="og:locale" content="en_ZA">
+    <!-- Open Graph tags: control how the page looks when shared on social media -->
+    <meta name="theme-color" content="#5B3E96">
+    <link rel="icon" type="image/jpeg" href="wehelp-pictures/wehelp.jpg">
+    <script src="https://kit.fontawesome.com/66613ffd06.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#enquiry">Skip to content</a>
+
+    <header>
+        <p class="logo"><a href="index.html"><span>WE HELP</span><span class="hugging-emoji" aria-hidden="true">🫂</span></a></p>
+
+        <div class="header-right">
+            <div class="search-bar">
+                <label for="site-search" class="sr-only" style="position:absolute;left:-9999px;">Search the site</label>
+                <input id="site-search" type="text" placeholder="Search..." autocomplete="off">
+            </div>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav aria-label="Primary">
+        <ul id="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="enquiry">
+            <div class="container">
+                <h1>Enquiry</h1>
+                <p class="eyebrow">Volunteer, sponsor or partner with us, or ask about our services.</p>
+
+                <div class="notice" role="note">
+                    <strong>Need support right now?</strong> Please do not use this form. Call or text us any time: our details are on the <a href="contacts.html">Contacts page</a>.
+                </div>
+
+                <!-- Enquiry form: validated by js/enquiry.js, which then shows a response for the enquiry type -->
+                <form class="contact-form" id="enquiryForm" novalidate>
+                    <div>
+                        <label for="enq-name">Full name</label>
+                        <input type="text" id="enq-name" name="name" placeholder="Your name" autocomplete="name" required>
+                        <span class="error" id="enq-name-error"></span>
+                    </div>
+                    <div>
+                        <label for="enq-email">Email</label>
+                        <input type="email" id="enq-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                        <span class="error" id="enq-email-error"></span>
+                    </div>
+                    <div>
+                        <label for="enq-phone">Phone (needed for a call or WhatsApp)</label>
+                        <input type="tel" id="enq-phone" name="phone" placeholder="e.g. 072 055 37 17" autocomplete="tel">
+                        <span class="error" id="enq-phone-error"></span>
+                    </div>
+                    <div>
+                        <label for="enq-type">What is your enquiry about?</label>
+                        <select id="enq-type" name="type" required>
+                            <option value="">-- Choose an option --</option>
+                            <option value="volunteer">Volunteering</option>
+                            <option value="sponsor">Sponsoring or donating</option>
+                            <option value="partner">Partnership (school, workplace or organisation)</option>
+                            <option value="info">Information about our services</option>
+                        </select>
+                        <span class="error" id="enq-type-error"></span>
+                    </div>
+
+                    <!-- Radio buttons: how we should contact them -->
+                    <fieldset>
+                        <legend>How should we contact you?</legend>
+                        <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+                        <label><input type="radio" name="contactMethod" value="phone"> Phone call</label>
+                        <label><input type="radio" name="contactMethod" value="whatsapp"> WhatsApp</label>
+                    </fieldset>
+
+                    <!-- Date picker: earliest day they would like to hear from us -->
+                    <div>
+                        <label for="enq-date">Earliest date you would like to hear from us</label>
+                        <input type="date" id="enq-date" name="date" required>
+                        <span class="error" id="enq-date-error"></span>
+                    </div>
+                    <div>
+                        <label for="enq-message">Message</label>
+                        <textarea id="enq-message" name="message" rows="4" maxlength="500" placeholder="Tell us a little about your enquiry" required></textarea>
+                        <small class="char-count" id="enq-count">0 / 500</small>
+                        <span class="error" id="enq-message-error"></span>
+                    </div>
+
+                    <!-- Checkbox: must be ticked before sending -->
+                    <div>
+                        <label class="check-label" for="enq-consent">
+                            <input type="checkbox" id="enq-consent" name="consent" required>
+                            <span>I understand this form is not for emergencies, and I will not include private health details.</span>
+                        </label>
+                        <span class="error" id="enq-consent-error"></span>
+                    </div>
+
+                    <button type="submit">Send enquiry</button>
+                </form>
+
+                <!-- Response box: filled in by JavaScript after a valid enquiry -->
+                <div id="enquiryResult" class="form-result" role="status" tabindex="-1" hidden></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/wehelp" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/wehelp" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/wehelp" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://wa.me/18009435357" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/wehelp" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <p>&copy; 2026 WE HELP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Part 3 scripts: defer loads them after the page is parsed -->
+    <script defer src="js/main.js"></script>
+    <script defer src="js/enquiry.js"></script>
+</body>
+</html>
