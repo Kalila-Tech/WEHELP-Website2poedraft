@@ -4,15 +4,9 @@ A website for **WE HELP**, offering 24/7 text and hotline support, therapy
 connections, and a judgment-free space for anyone facing a mental health
 struggle.
 
-## Student Information
-- **Name:** Sphesihle Langa
-- **Student Number:** ST10531999
-- **Module:** WEDE5020 – Web Development (Introduction)
-- **Submission:** Individual
-
 ## Project Links
-- **Live website:** [add your live website link here]
-- **GitHub repository:** [add your GitHub repository link here]
+- **Live website:** [[add your live website link here](https://kalila-tech.github.io/WEHELP-Website2/)]
+- **GitHub repository:**  https://github.com/Kalila-Tech/WEHELP-Website2.git
 
 ## Project Overview
 WE HELP is a mental health support organisation. Its website explains the
