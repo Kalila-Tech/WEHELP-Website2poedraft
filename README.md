@@ -5,7 +5,7 @@ connections, and a judgment-free space for anyone facing a mental health
 struggle.
 
 ## Project Links
-- **Live website:** [[add your live website link here](https://kalila-tech.github.io/WEHELP-Website2/)]
+- **Live website:** (https://kalila-tech.github.io/WEHELP-Website2/)
 - **GitHub repository:**  https://github.com/Kalila-Tech/WEHELP-Website2.git
 
 ## Project Overview
